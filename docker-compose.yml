@@ -8,8 +8,8 @@ services:
     security_opt:
       - apparmor:unconfined
     volumes:
-      - /mnt/sdlocal/bt-joly/config:/config
-      - /mnt/sdlocal/bt-joly/cache:/cache
+      - ./config:/config
+      - ./cache:/cache
       - /mnt/xyzlocal:/media
     restart: 'unless-stopped'
     environment:
